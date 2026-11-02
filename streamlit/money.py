@@ -5,9 +5,7 @@ from ultralytics import YOLO
 import numpy as np
 
 # Load trained YOLO model
-model = YOLO(
-    r"C:\Users\user\PycharmProjects\GA\excercises\week9\train-7\weights\best.pt"
-)
+model = YOLO("train-7\weights\best.pt")
 
 st.title("Bahraini Currency Detection")
 st.write("Upload an image of Bahraini currency to detect its denomination.")
