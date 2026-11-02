@@ -5,7 +5,12 @@ from ultralytics import YOLO
 import numpy as np
 
 # Load trained YOLO model
-model = YOLO("train-7\weights\best.pt")
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parent.parent
+MODEL_PATH = BASE_DIR / "train-7" / "weights" / "best.pt"
+
+model = YOLO(str(MODEL_PATH))
 
 st.title("Bahraini Currency Detection")
 st.write("Upload an image of Bahraini currency to detect its denomination.")
