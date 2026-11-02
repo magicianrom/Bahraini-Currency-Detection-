@@ -24,6 +24,5 @@ train-7/        weights/best.pt
 4. The predicted labels and confidence scores are displayed.
 
 ## Live Demo
-
-
+https://bhdcurrencypredict.streamlit.app
 
